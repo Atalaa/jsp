@@ -8,5 +8,6 @@
 	}
 %>
 Lower case "HELLO WORLD": <%= lowerCase("HELLO WORLD") %>
+
 </body>
 </html>

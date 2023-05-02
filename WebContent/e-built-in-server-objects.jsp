@@ -11,5 +11,6 @@ Request user agent browser:<%= request.getHeader("User-Agent") %>
 
 <!-- What language the client is making use of in their browser (en, fr, ...) -->
 Request language: <%= request.getLocale() %>
+
 </body>
 </html>
