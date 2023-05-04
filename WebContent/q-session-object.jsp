@@ -15,7 +15,12 @@
 // get the TO DO items from the session
 		List<String> items = (List<String>) session.getAttribute("myToDoList");
 	
-		/*	This section of code access the JSP session object. 
+		/*	I used getAttribute first because,
+			I first retrieve the session and check to see if it has a list. 
+			If it doesn't have a list then we create one. 
+			Next we add the desired item to the list. 		
+		
+			This section of code access the JSP session object. 
 			The session object is unique for each web user. 
 			We attempt to get the TO DO items from the session. 
 			We make use of the attribute name "myToDoList". 
@@ -85,6 +90,10 @@
 			}
 		%>
 	</ol>
+	
+	<br/><br/>
+	
+	<a href="r-clear-session.jsp">Clear Session Data</a>
 	
 </body>
 </html>
