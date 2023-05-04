@@ -25,6 +25,7 @@
 		String itemToAdd = request.getParameter("item");
 		if(itemToAdd != null){
 			items.add(itemToAdd);
+			response.sendRedirect("q-session-object.jsp"); // fix duplicate submission item on refresh
 		}
 		
 	%> 
