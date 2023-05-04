@@ -51,7 +51,7 @@
 		
 // see if there is form data to add
 		String itemToAdd = request.getParameter("item");
-		if(itemToAdd != null){
+		if( (itemToAdd != null) && (!itemToAdd.trim().equals(""))){ // fix empty string submission item
 			items.add(itemToAdd);
 			response.sendRedirect("q-session-object.jsp"); // fix duplicate submission item on refresh
 		}
@@ -66,6 +66,10 @@
 			remember that "items" is a variable that holds a reference to an object. 
 			Then it points to the same area of memory that is used by the session (in Tomcat).
 			So in effect, the users's session has now been updated with this new entry.
+			
+			!itemToAdd.trim().equals(""): prevents the user from adding empty strings to the ToDo list.
+			It checks to make sure the itemToAdd is not equal to null and make sure itemToAdd is not an empty string.
+			I need to trim() the string to remove whitespace from beginning and end of string.
 		*/
 	%> 
 		
