@@ -63,7 +63,7 @@
 			Then we add itemToAdd to our "items" array list.
 
 			Since we're using object references, 
-			remember that "items" is a variable that holds a reference to an object. 
+			remember that "items" is a variable that holds a reference to an object / points to the SAME object in the session.. 
 			Then it points to the same area of memory that is used by the session (in Tomcat).
 			So in effect, the users's session has now been updated with this new entry.
 			
