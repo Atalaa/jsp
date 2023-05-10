@@ -1,2 +1,2 @@
 # jsp-fundamentals
-Explore JSP scripting elements: Expressions, Scriptlets and Declarations
+Explore JSP scripting elements: Expressions, Scriptlets, Declarations, Sessions and Cookies.
