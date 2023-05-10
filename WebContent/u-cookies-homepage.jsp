@@ -1,4 +1,7 @@
+<%@ page import="java.net.URLDecoder" %>
+
 <html>
+<!-- Reading Cookies from the Browser -->	
 <!-- Read the favorite programming language cookie with JSP -->
  <%
  	//setting default language, if no cookies set
@@ -11,7 +14,8 @@
  	if(cookies != null){
  		for(Cookie item : cookies){
  			if(item.getName().equals("myFavoriteLanguage")){
- 				newFavLanguage = item.getValue();
+ 				//decode cookie data ... handle case of languages with spaces in them
+ 				newFavLanguage = URLDecoder.decode(item.getValue(), "UTF-8");
      			break;
      		}
      	}
