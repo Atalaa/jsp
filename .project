@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>servletDemo</name>
+=======
+	<name>jspDemo</name>
+>>>>>>> branch 'main' of https://github.com/Atalaa/jsp-fundamentals.git
 	<comment></comment>
 	<projects>
 	</projects>
